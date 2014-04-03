@@ -1,0 +1,38 @@
+.lang {
+    float:right;
+    font-size:11px;
+    color:#9c9b9b;
+    padding:4px 0 0;
+}
+
+.lang__list {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    margin-left:10px;
+    padding:0;
+    top:-2px;
+}
+
+.lang__item {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: top;
+    width:34px;
+    height:29px;
+    padding:0 !important;
+    background:none !important;
+    line-height:29px;
+    text-align:center;
+}
+
+.lang__flagImg {
+    display:inline;
+    vertical-align:middle;
+}
+
+.lang__item_active {
+    background:url("../../img/langActive.png") 0 0 no-repeat !important;
+}

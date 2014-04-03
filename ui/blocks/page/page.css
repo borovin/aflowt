@@ -1,0 +1,52 @@
+.page{
+
+}
+
+.page__outside {
+    min-height: 100%;
+    *overflow: hidden;
+    *zoom: 1;
+    width:960px;
+    margin:0 auto;
+}
+
+.page__content {
+    padding-bottom:160px;
+}
+
+.page__col1 {
+    width:280px;
+    padding:0 25px;
+    float:left;
+}
+
+.page__col2 {
+    margin-left:330px;
+}
+
+.page__col3 {
+    float:right;
+    width:265px;
+    padding:20px 0 20px 30px;
+    font-size:12px;
+}
+
+.page__col3 p{
+    padding-bottom:20px;
+}
+
+.page__col5 {
+    float:left;
+    width:260px;
+    padding:30px 40px 30px 0;
+}
+
+.page__overflow {
+    overflow: hidden;
+    *zoom: 1;
+    padding-top:30px;
+}
+
+.page__clear {
+    clear: both;
+}
