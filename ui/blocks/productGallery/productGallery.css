@@ -8,10 +8,13 @@
 .productGallery__largePreview{
     display:block;
     width:294px;
+    height:294px;
     border:1px solid #e1e1e1;
     margin-bottom:20px;
     padding:10px;
     cursor:pointer;
+    line-height: 294px;
+    text-align: center;
 }
 
 .productGallery__largePreview .icon{
@@ -22,7 +25,9 @@
 }
 
 .productGallery__largeImg{
-    max-height:100%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .productGallery__thumbList {
@@ -39,11 +44,15 @@
     border:1px solid #e1e1e1;
     width:80px;
     height:80px;
+    line-height: 80px;
     display:block;
     padding:5px;
     cursor:pointer;
+    text-align: center;
 }
 
 .productGallery__thumbImg{
-    max-height:80px;
+    width: 100%;
+    vertical-align: middle;
+    display: inline-block;
 }

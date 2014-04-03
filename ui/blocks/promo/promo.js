@@ -13,7 +13,10 @@ define(
                 this.element.on('click', '.promo__thumbLink', function(e){
                     var index = $promo__thumbList.find('.promo__thumbItem').index($(this).closest('.promo__thumbItem'));
 
-                    $promo__gallery.find('.promo__galleryImg').eq(index).fadeIn().siblings('.promo__galleryImg').fadeOut();
+                    $promo__gallery.find('.promo__galleryImg').eq(index)
+                        .addClass('promo__galleryImg_visible')
+                        .siblings('.promo__galleryImg')
+                        .removeClass('promo__galleryImg_visible');
 
                     return false;
                 })
