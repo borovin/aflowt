@@ -1,0 +1,15 @@
+.icon {
+    display: inline-block;
+    position: relative;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.icon_size_24 {
+    width: 24px;
+    height: 24px;
+}
+
+.icon_img_zoom{
+    background-image: url("img/zoom.png");
+}
