@@ -10,5 +10,7 @@ require.config({
 });
 
 require(['jquery', 'requireDom'], function($, requireDom){
-    requireDom();
+    $(function(){
+        requireDom();
+    });
 });
