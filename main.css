@@ -1,4 +1,4 @@
-@import "css/default.css";
+@import "kit/default.css";
 
 @import "blocks/page/page.css";
 @import "blocks/mainPage/mainPage.css";
@@ -15,4 +15,4 @@
 @import "blocks/list/list.css";
 @import "blocks/icon/icon.css";
 
-@import "libs/jquery/fancybox/jquery.fancybox.css";
+@import "bower_components/colorbox/example2/colorbox.css";
