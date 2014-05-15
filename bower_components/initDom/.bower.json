@@ -1,7 +1,7 @@
 {
-  "name": "requireDom",
-  "main": "requireDom.js",
-  "version": "0.0.3",
+  "name": "initDom",
+  "main": "initDom.js",
+  "version": "0.1.1",
   "authors": [
     "Andrew Borovin <a@borovin.com>"
   ],
@@ -24,16 +24,18 @@
     "path",
     "example.html",
     "karma.conf.js",
+    "package.json",
     "karma.main.js"
   ],
-  "homepage": "https://github.com/borovin/requireDom",
-  "_release": "0.0.3",
+  "homepage": "https://github.com/borovin/initDom",
+  "_release": "0.1.1",
   "_resolution": {
     "type": "version",
-    "tag": "v0.0.3",
-    "commit": "c38fe8c4890a018b97f93afcceb47b40062be758"
+    "tag": "v0.1.1",
+    "commit": "8c6113cf851b00c3a1f0ec6027e54f2f9adf616a"
   },
-  "_source": "git://github.com/borovin/requireDom.git",
-  "_target": "~0.0.2",
-  "_originalSource": "requireDom"
+  "_source": "git://github.com/borovin/initDom.git",
+  "_target": "~0.1.1",
+  "_originalSource": "initDom",
+  "_direct": true
 }

@@ -1,7 +1,7 @@
 require.config({
     paths: {
         jquery: 'bower_components/jquery/dist/jquery',
-        requireDom: 'bower_components/requireDom/requireDom',
+        initDom: 'bower_components/initDom/initDom',
         colorbox: 'bower_components/colorbox/jquery.colorbox'
     },
     shim: {
@@ -9,8 +9,8 @@ require.config({
     }
 });
 
-require(['jquery', 'requireDom'], function($, requireDom){
+require(['jquery', 'initDom'], function($, initDom){
     $(function(){
-        requireDom();
+        initDom();
     });
 });
