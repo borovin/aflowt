@@ -1,4 +1,4 @@
-aflowt
+Aflowt
 ======
 
 BEM-site example
