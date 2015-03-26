@@ -1,0 +1,17 @@
+@import "common.css";
+@import "bower_components/colorbox/example2/colorbox.css";
+@import "blocks/page/page.css";
+@import "blocks/mainPage/mainPage.css";
+@import "blocks/catalog/catalog.css";
+@import "blocks/mainLang/mainLang.css";
+@import "blocks/header/header.css";
+@import "blocks/topMenu/topMenu.css";
+@import "blocks/lang/lang.css";
+@import "blocks/promo/promo.css";
+@import "blocks/subMenu/subMenu.css";
+@import "blocks/footer/footer.css";
+@import "blocks/table/table.css";
+@import "blocks/productGallery/productGallery.css";
+@import "blocks/list/list.css";
+@import "blocks/icon/icon.css";
+

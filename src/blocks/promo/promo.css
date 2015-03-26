@@ -1,0 +1,80 @@
+/**/
+
+.promo {
+    padding-bottom: 40px;
+}
+
+.promo__description {
+    width: 269px;
+    background-color: #2f91cf;
+    padding: 40px 30px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 16px;
+    float: left;
+    height: 380px;
+    margin-right: 1px;
+}
+
+.promo__gallery {
+    width: 630px;
+    height: 460px;
+    overflow: hidden;
+    line-height: 460px;
+    text-align: center;
+}
+
+.promo__galleryImg {
+    width: 100%;
+    display: none;
+    vertical-align: middle;
+}
+
+.promo__galleryImg_visible{
+    display: inline-block;
+}
+
+.promo__previewControl {
+    overflow: hidden;
+    margin-top: 1px;
+}
+
+.promo__controlTitle {
+    height: 75px;
+    line-height: 75px;
+    float: left;
+    width: 279px;
+    background: #327cc1 url("../../img/arrowRight1.png") 290px center no-repeat;
+    color: #fff;
+    padding-right: 50px;
+    text-align: right;
+}
+
+.promo__thumbList {
+    margin-left: 330px;
+    margin-right: -6px;
+    padding: 0;
+}
+
+.promo__thumbItem {
+    float: left;
+    width: 105px;
+    padding: 0 !important;
+    background: none !important;
+    margin-right: 1px;
+}
+
+.promo__thumbLink {
+    display: block;
+    overflow: hidden;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.promo__thumbImg {
+    width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}

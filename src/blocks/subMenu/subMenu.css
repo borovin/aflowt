@@ -1,0 +1,38 @@
+.subMenu {
+    padding: 15px 25px;
+    background-color: #1076b7;
+    margin-bottom: 1px;
+    color: #fff;
+    line-height: 16px;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+}
+
+.subMenu h1 {
+    font-weight: normal;
+    font-size: 21px;
+    color: #fff;
+    padding: 0;
+    line-height: normal;
+}
+
+.subMenu__backLink {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    vertical-align: middle;
+    width: 28px;
+    height: 28px;
+    background: url("../../img/arrowLeft.png") 0 0 no-repeat;
+    margin-right: 20px;
+    top: -2px;
+}
+
+.subMenu__comment {
+    color: #cde3f1;
+    font-size: 20px;
+    margin: 0 20px 0 20px;
+
+}

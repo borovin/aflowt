@@ -1,0 +1,38 @@
+.lang {
+    float:right;
+    font-size:11px;
+    color:#9c9b9b;
+    padding:4px 0 0;
+}
+
+.lang__list {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left:10px;
+    padding:0;
+    top:-2px;
+}
+
+.lang__item {
+    display: inline-block;
+    vertical-align: top;
+    width:36px;
+    height:32px;
+    padding:0 !important;
+    background:none !important;
+    line-height:31px;
+    text-align:center;
+    box-sizing: border-box;
+}
+
+.lang__flagImg {
+    display:inline;
+    vertical-align:middle;
+}
+
+.lang__item_active {
+    background-color: #eee !important;
+    background-image: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}

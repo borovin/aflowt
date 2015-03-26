@@ -1,0 +1,29 @@
+{
+  "name": "get",
+  "main": "get.js",
+  "version": "0.0.1",
+  "description": "Function for smart get object properties",
+  "authors": [
+    "a@borovin.com"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tools",
+    "test",
+    "tests",
+    "coverage",
+    "index.html",
+    "require.config.js",
+    "package.json",
+    "Gruntfile.js"
+  ],
+  "dependencies": {
+    "lodash": "^3.5.0"
+  }
+}

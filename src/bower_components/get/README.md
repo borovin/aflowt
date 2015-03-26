@@ -1,0 +1,4 @@
+get
+===
+
+Smart property getter
