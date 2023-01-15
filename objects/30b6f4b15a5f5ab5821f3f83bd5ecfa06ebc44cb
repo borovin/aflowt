@@ -2,3 +2,7 @@
 	object = bfed6a10d90ab05db07cd50c81f9d59c7ced3699
 	path = module1
 	type = expand module
+[map "e9270dc0-261b-3002-933c-63407ed6c0c5"]
+	object = abee1affa5a884b505ce988a3cbf16fa5359d328
+	path = createClass
+	type = expand module
