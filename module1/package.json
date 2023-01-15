@@ -1,0 +1,33 @@
+{
+  "version": "1.2.0",
+  "name": "createClass",
+  "main": "index.js",
+  "description": "js class builder",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/borovin/createClass.git"
+  },
+  "homepage": "https://github.com/borovin/createClass",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --config=jestCoverage.json",
+    "test:codestyle": "eslint .",
+    "test:deps": "npm-check",
+    "fix:codestyle": "eslint . --fix"
+  },
+  "devDependencies": {
+    "eslint": "^2.0.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.9.2",
+    "jest": "^13.2.3",
+    "npm-check": "^5.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1"
+  },
+  "jest": {
+    "automock": false
+  },
+  "author": "a@borovin.com",
+  "license": "MIT"
+}
