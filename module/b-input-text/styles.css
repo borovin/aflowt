@@ -1,0 +1,83 @@
+b-input-text {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    min-height: 72px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: var(--b-font-family);
+    text-align: left;
+    vertical-align: middle;
+}
+
+b-input-text > input {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: var(--b-font-family);
+    font-size: 16px;
+    outline: none;
+    background: none;
+    display: block;
+    border: none;
+    position: relative;
+    z-index: 2;
+    resize: none;
+    padding: 8px 0;
+    transition: background-color 0.2s;
+}
+
+b-input-text > input::placeholder {
+    color: rgba(0, 0, 0, 0.38);
+}
+
+b-input-text--label {
+    transform: translate3d(0, 26px, 0);
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.38);
+    transition: font-size 0.2s, transform 0.2s, color 0.2s;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 4px;
+}
+
+b-input-text--border {
+    height: 2px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    transition: border-color 0.2s;
+}
+
+b-input-text > input:focus ~ b-input-text--label {
+    font-size: 12px;
+    transform: translate3d(0, 0, 0);
+    color: var(--b-primary-color);
+}
+
+b-input-text > input:focus ~ b-input-text--border {
+    border-bottom: 2px solid var(--b-primary-color);
+}
+
+b-input-text[value] b-input-text--label {
+    font-size: 12px;
+    transform: translate3d(0, 0, 0);
+    color: rgba(0, 0, 0, 0.54);
+}
+
+b-input-text[error] > input ~ b-input-text--label {
+    font-size: 12px;
+    transform: translate3d(0, 0, 0);
+    color: var(--b-danger-color);
+}
+
+b-input-text[error] > input ~ b-input-text--border {
+    border-bottom: 2px solid var(--b-danger-color);
+}
+
+b-input-text[error]::after {
+    content: attr(error);
+    font-size: 12px;
+    color: var(--b-danger-color);
+}

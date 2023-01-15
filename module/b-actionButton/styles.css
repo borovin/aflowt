@@ -1,0 +1,125 @@
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+b-action-button {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    color: #fff;
+}
+
+b-action-button b-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+b-action-button[small] {
+    width: 40px;
+    height: 40px;
+    line-height: 39px;
+}
+
+b-action-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--b-primary-color);
+    transition: opacity 0.2s, box-shadow 0.2s;
+    border-radius: 100%;
+    box-shadow: var(--b-shadow-1);
+}
+
+b-action-button:hover::before {
+    box-shadow: var(--b-shadow-2);
+}
+
+b-action-button a, b-action-button button {
+    color: inherit;
+    display: block;
+    text-transform: uppercase;
+    background: transparent;
+    text-align: center;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    font-size: inherit;
+    user-select: none;
+    border: none;
+    outline: none;
+    box-sizing: content-box;
+}
+
+b-action-button a > slot, b-action-button button > slot {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 44px;
+}
+
+b-action-button input {
+    display: none;
+}
+
+b-action-button[flat] {
+    color: var(--b-primary-color);
+}
+
+b-action-button[flat][color="accent"] {
+    color: var(--b-accent-color);
+}
+
+b-action-button[flat][color="warning"] {
+    color: var(--b-focus-color);
+}
+
+b-action-button[flat][color="danger"] {
+    color: var(--b-danger-color);
+}
+
+b-action-button[color="accent"]::before {
+    background-color: var(--b-accent-color);
+}
+
+b-action-button[color="warning"]::before {
+    background-color: var(--b-focus-color);
+}
+
+b-action-button[color="danger"]::before {
+    background-color: var(--b-danger-color);
+}
+
+b-action-button[color="white"]::before {
+    background-color: #fff;
+}
+
+b-action-button[color="white"] {
+    color: var(--b-primary-color);
+}
+
+b-action-button[flat]::before {
+    opacity: 0;
+    box-shadow: none;
+}
+
+b-action-button[flat]:hover::before {
+    opacity: 0.12;
+}

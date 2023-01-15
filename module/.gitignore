@@ -1,0 +1,14 @@
+.idea
+node_modules
+styles.js
+styles/*.js
+styles/initial.css
+.nyc_output
+coverage
+.DS_Store
+dist
+kit.js
+npm-debug.log
+src/kit.js
+.npmrc
+output

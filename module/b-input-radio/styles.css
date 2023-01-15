@@ -1,0 +1,85 @@
+b-input-radio {
+    font-family: var(--b-font-family);
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+}
+
+b-input-radio label {
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+}
+
+b-input-radio label > slot {
+    display: block;
+    font-size: 16px;
+    padding-top: 14px;
+    margin-left: 56px;
+    line-height: 1.6em;
+}
+
+b-input-radio--icon {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    color: #fff;
+    float: left;
+}
+
+b-input-radio--icon::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.54);
+    border-radius: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+b-input-radio--icon::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -6px;
+    background-color: var(--b-primary-color);
+    border-radius: 100%;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+b-input-radio input {
+    visibility: hidden;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+}
+
+b-input-radio input:checked ~ b-input-radio--icon::before {
+    border-color: var(--b-primary-color);
+}
+
+b-input-radio input:checked ~ b-input-radio--icon::after {
+    opacity: 1;
+}
+
+b-input-radio[disabled] {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+}

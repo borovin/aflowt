@@ -1,0 +1,12 @@
+{
+  "env": {
+    "production": {
+      "presets": ["babili"],
+      "plugins": ["remove-comments"]
+    },
+    "coverage": {
+      "presets": ["babili"],
+      "plugins": ["istanbul"]
+    }
+  }
+}

@@ -1,0 +1,109 @@
+@keyframes progress-bar-stripes {
+    from {
+        background-position: 40px 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+b-button {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 500;
+    position: relative;
+    line-height: 35px;
+    height: 36px;
+    color: #fff;
+}
+
+b-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--b-primary-color);
+    transition: opacity 0.2s, box-shadow 0.2s;
+    border-radius: 2px;
+    box-shadow: var(--b-shadow-1);
+}
+
+b-button:hover::before {
+    box-shadow: var(--b-shadow-2);
+}
+
+b-button a, b-button button {
+    color: inherit;
+    display: block;
+    text-transform: uppercase;
+    background: transparent;
+    text-align: center;
+    padding: 0 16px;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 14px;
+    user-select: none;
+    border: none;
+    outline: none;
+    font-family: var(--b-font-family);
+    min-width: 64px;
+    box-sizing: content-box;
+}
+
+b-button input {
+    display: none;
+}
+
+b-button[flat][color="accent"] {
+    color: var(--b-accent-color);
+}
+
+b-button[flat][color="warning"] {
+    color: var(--b-focus-color);
+}
+
+b-button[flat][color="danger"] {
+    color: var(--b-danger-color);
+}
+
+b-button[color="accent"]::before {
+    background-color: var(--b-accent-color);
+}
+
+b-button[color="warning"]::before {
+    background-color: var(--b-focus-color);
+}
+
+b-button[color="danger"]::before {
+    background-color: var(--b-danger-color);
+}
+
+b-button[color="white"] {
+    color: var(--b-primary-color);
+}
+
+b-button[color="white"]::before {
+    background-color: #fff;
+}
+
+b-button[flat] {
+    color: var(--b-primary-color);
+}
+
+b-button[flat]::before {
+    opacity: 0;
+    box-shadow: none;
+}
+
+b-button[flat]:hover::before {
+    opacity: 0.12;
+}
+
+b-button[disabled] {
+    opacity: 0.4;
+    pointer-events: none;
+}

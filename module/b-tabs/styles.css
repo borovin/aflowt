@@ -1,0 +1,49 @@
+b-tabs {
+    font-family: var(--b-font-family);
+    white-space: nowrap;
+    overflow: auto;
+    color: var(--b-primary-color);
+    border-bottom-color: var(--b-primary-color);
+}
+
+b-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+b-tabs--item {
+    text-transform: uppercase;
+    color: inherit;
+    border-bottom: 3px solid transparent;
+    height: 48px;
+    padding: 0 12px;
+    line-height: 48px;
+    opacity: 0.7;
+    display: inline-block;
+    font-size: 14px;
+    max-width: 264px;
+    min-width: 72px;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+}
+
+b-tabs--item a {
+    text-decoration: none;
+}
+
+b-tabs--item:hover {
+    opacity: 1;
+}
+
+b-tabs--item[active] {
+    border-bottom-color: inherit;
+    opacity: 1;
+}
+
+b-tabs--content {
+    display: none;
+}
+
+b-tabs--content[active] {
+    display: block;
+}
